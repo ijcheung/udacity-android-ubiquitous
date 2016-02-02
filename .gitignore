@@ -27,6 +27,9 @@ ant.properties
 local.properties
 project.properties
 
+# Security ignore for API key
+gradle.properties
+
 # Eclipse project files
 .classpath
 .project
