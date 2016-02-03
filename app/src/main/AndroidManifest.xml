@@ -104,6 +104,9 @@
                 android:name="android.content.SyncAdapter"
                 android:resource="@xml/syncadapter" />
         </service>
+        <service
+            android:name=".sync.WatchFaceSyncService"
+            android:exported="true" />
 
         <!-- The Google Cloud Messaging receiver and services -->
         <receiver

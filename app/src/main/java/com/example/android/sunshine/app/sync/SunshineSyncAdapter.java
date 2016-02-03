@@ -364,6 +364,8 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
         Intent dataUpdatedIntent = new Intent(ACTION_DATA_UPDATED)
                 .setPackage(context.getPackageName());
         context.sendBroadcast(dataUpdatedIntent);
+
+        WatchFaceSyncService.start(context);
     }
 
     private void updateMuzei() {
